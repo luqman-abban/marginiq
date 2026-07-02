@@ -1,5 +1,3 @@
-# Corporaci-n-Favorita-Grocery-Sales-Forecasting
-
 
 # MarginIQ — Profit Leakage & Decision Intelligence Platform
 

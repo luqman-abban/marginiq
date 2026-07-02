@@ -27,6 +27,9 @@ FILES = {
 
 
 def main() -> None:
+    # FIX: DuckDB creates its database file, but not the folder it lives in.
+    Path("data").mkdir(exist_ok=True)
+
     con = duckdb.connect(DB_PATH)
     # Be explicit about resources; DuckDB spills to disk beyond this.
     con.execute("SET memory_limit='8GB'; SET threads=4;")
